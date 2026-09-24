@@ -1,9 +1,20 @@
 # Leosplain Prompt Templates
 
-**直接能用的繁體中文 Prompt 模板，來自真實踩坑與反覆測試。**
+**直接複製就能用的繁體中文 Prompt，全部來自實際測試、踩坑與反覆修改。**
 
-這裡不是「神奇萬能句合集」，而是把 Leosplain 網站上實際驗證過的工作規則，整理成可直接複製的卡片。  
-你拿模板就能先跑，想知道「為什麼這樣寫、哪裡會失敗、怎麼改才有效」，再到原網站看完整實測。
+這個 Repo 提供可以直接使用的 Prompt 模板。
+
+但如果你想知道：
+
+- 為什麼原本的 Prompt 會失效？
+- 改哪一段之後結果才改善？
+- A/B 測試到底差在哪裡？
+- 哪些限制不能拿掉？
+- 在什麼條件下，這個方法其實不適用？
+
+完整測試、失敗案例與修改過程，都整理在 Leosplain 網站。
+
+👉 **[前往 Leosplain 看完整 AI 實戰](https://leosplain.com/)**
 
 **作者**：Leo（筆名）／ Leosplain Lab  
 **原則**：第一手實測、清楚標示限制、無商業置入  
@@ -11,36 +22,58 @@
 
 ---
 
-## 為什麼直接來這裡還不夠？
+## 如果你只看 3 篇
 
-模板能讓你立刻開始，但完整文章裡有這些東西：
+### ① Prompt 寫了很多，結果還是不穩
+[Prompt Engineering 是什麼？](https://leosplain.com/ai-prompt-engineering/)
+
+從 Prompt 結構、6 個核心元素，到實際使用時容易出錯的地方。
+
+### ② Prompt 改了很多次，還是不知道問題在哪裡
+[Prompt 怎麼改才有用？3 組對照](https://leosplain.com/prompt-details-breakdown-guide/)
+
+直接看不同寫法的 A/B 對照，找出 Prompt 為什麼沒有照預期工作。
+
+### ③ AI 給出的答案看起來很合理，但真的對嗎？
+[AI 寫作防幻覺實測](https://leosplain.com/ai-writing-hallucination-fact-checking/)
+
+從查核、來源到實際寫作流程，拆解怎麼避免把錯誤內容直接交出去。
+
+---
+
+## 想知道這些 Prompt 為什麼有效？
+
+這個 Repo 給你可以直接使用的 Prompt。
+
+網站文章則會公開完整測試過程：
 
 - 真實失敗案例與修正過程
-- 同一任務的 A/B 對照結果
-- 測試環境、版本與限制說明
-- 為什麼某個限制不能亂刪
+- 同一任務的 A/B 對照
+- 測試環境、版本與限制
+- 哪些規則實際上不能刪
+- 哪些方法在不同情況下可能失效
 
-想一次看懂「怎麼寫才穩、哪裡容易踩坑」，建議直接看原文章：
+**如果你想學的不只是「複製哪一句」，而是「為什麼這樣寫」，建議直接看原文章。**
 
-| 主題 | 完整文章 |
-|------|----------|
-| Prompt 核心框架（6 元素 + 5 套結構） | [Prompt Engineering 是什麼？](https://leosplain.com/ai-prompt-engineering/) |
-| 日常高頻 5 張模組卡片 | [The Prompt Vault](https://leosplain.com/the-prompt-vault/) |
-| 會議紀錄完整工作流 | [AI 會議紀錄怎麼寫？](https://leosplain.com/ai-meeting-notes-workflow/) |
-| 防幻覺：先查核再寫作 | [AI 寫作防幻覺實測](https://leosplain.com/ai-writing-hallucination-fact-checking/) |
-| Prompt 不好用時怎麼改 | [Prompt 怎麼改才有用？3 組對照](https://leosplain.com/prompt-details-breakdown-guide/) |
+| 你現在遇到的問題 | 建議先看 |
+|---|---|
+| 想建立穩定的 Prompt 寫法 | [Prompt Engineering 是什麼？](https://leosplain.com/ai-prompt-engineering/) |
+| 想直接拿常用 Prompt 使用 | [The Prompt Vault](https://leosplain.com/the-prompt-vault/) |
+| AI 會議紀錄總是很亂 | [AI 會議紀錄怎麼寫？](https://leosplain.com/ai-meeting-notes-workflow/) |
+| 擔心 AI 一本正經講錯 | [AI 寫作防幻覺實測](https://leosplain.com/ai-writing-hallucination-fact-checking/) |
+| Prompt 改了很多次仍然沒改善 | [Prompt 怎麼改才有用？3 組對照](https://leosplain.com/prompt-details-breakdown-guide/) |
 
-→ 更多 AI 實戰筆記：[leosplain.com](https://leosplain.com/)
+→ [更多 AI 實戰筆記：leosplain.com](https://leosplain.com/)
 
 ---
 
 ## 這個 Repo 有什麼？
 
 | 資料夾 | 內容 | 適合誰 |
-|--------|------|--------|
+|---|---|---|
 | `01-core-frameworks/` | 5 套核心骨架（R-C-T-F、C-A-R-E、T-A-G、BAB、R-I-S-E） | 想建立固定寫法習慣的人 |
 | `02-prompt-vault/` | 會議降噪、商務回信、審查、長文、程式碼審查 | 每天都在用 AI 處理工作的人 |
-| `03-meeting-notes/` | 清理 → 摘要 → 決議 → 待辦（四組完整 Prompt） | 需要可交付會議紀錄的人 |
+| `03-meeting-notes/` | 清理 → 摘要 → 決議 → 待辦 | 需要可交付會議紀錄的人 |
 | `04-fact-checking/` | 先查核再寫作流程 | 在意來源與幻覺的人 |
 | `05-prompt-debugging/` | 動詞、表格缺值、角色標準三組對照 | Prompt 結果不對、想快速除錯的人 |
 
@@ -53,28 +86,31 @@
 3. 把 `[貼上...]` 換成你的實際資料
 4. 結果不理想 → 先看 `05-prompt-debugging/`，一次只改一類問題
 
-### 使用原則（建議保留）
+### 使用原則
 
 1. **資料與規則分開**：長文本放最後，用明確標記包起來
-2. **保留負向限制**：「禁止自行補充」「找不到就標待確認」通常是防幻覺關鍵
-3. **一次只改一類**：空話、假日期、假負責人，先對準一種再測
+2. **保留限制**：「禁止自行補充」「找不到就標待確認」通常是防幻覺的重要條件
+3. **一次只改一類**：不要同時修改太多變數
 4. **結果請自行驗證**：模板來自特定時間與模型版本的實測
 
 ---
 
 ## 想看更多實測？
 
-- 網站首頁：[leosplain.com](https://leosplain.com/)
-- About（我怎麼測、測試環境）：[leosplain.com/about-me](https://leosplain.com/about-me/)
-- 所有 Prompt 相關文章都標有可重現資源與限制說明
+**網站不是只整理 Prompt，而是把實際測試過程一起公開。**
 
-如果這個 Repo 對你有幫助，歡迎 star，也歡迎直接到網站看完整筆記。
+👉 [Leosplain](https://leosplain.com/)
+
+👉 [作者與測試方法](https://leosplain.com/about/)
+
+覺得這些 Prompt 有用，歡迎 Star。
 
 ---
 
 ## 貢獻
 
 歡迎開 Issue 回報：
+
 - 在特定模型上的失效案例
 - 更好的限制寫法
 - 新增高頻使用情境
